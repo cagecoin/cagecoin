@@ -2092,7 +2092,7 @@ bool LoadBlockIndex(bool fAllowNew)
 		//   vMerkleTree: 6f80efd038 
 
         // Genesis block
-        const char* pszTimestamp = "Nintondo";
+        const char* pszTimestamp = "Nicolas Cage";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
