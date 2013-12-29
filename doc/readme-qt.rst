@@ -23,9 +23,9 @@ then execute the following:
     qmake
     make
 
-Alternatively, install `Qt Creator`_ and open the `dogecoin-qt.pro` file.
+Alternatively, install `Qt Creator`_ and open the `cagecoin-qt.pro` file.
 
-An executable named `dogecoin-qt` will be built.
+An executable named `cagecoin-qt` will be built.
 
 .. _`Qt Creator`: http://qt.nokia.com/downloads/
 
@@ -40,7 +40,7 @@ Windows build instructions:
 
 - Copy the contents of the folder "deps" to "X:\\QtSDK\\mingw", replace X:\\ with the location where you installed the Qt SDK. Make sure that the contents of "deps\\include" end up in the current "include" directory.
 
-- Open the dogecoin-qt.pro file in Qt Creator and build as normal (ctrl-B)
+- Open the cagecoin-qt.pro file in Qt Creator and build as normal (ctrl-B)
 
 .. _`Qt Windows SDK`: http://qt.nokia.com/downloads/sdk-windows-cpp
 .. _`dependencies archive`: https://download.visucore.com/bitcoin/qtgui_deps_1.zip
@@ -62,7 +62,7 @@ Mac OS X
 	sudo port selfupdate
 	sudo port install boost db48 miniupnpc
 
-- Open the dogecoin-qt.pro file in Qt Creator and build as normal (cmd-B)
+- Open the cagecoin-qt.pro file in Qt Creator and build as normal (cmd-B)
 
 .. _`Qt Mac OS X SDK`: http://qt.nokia.com/downloads/sdk-mac-os-cpp
 .. _`MacPorts`: http://www.macports.org/install.php
@@ -74,7 +74,7 @@ Build configuration options
 UPnP port forwarding
 --------------------
 
-To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable dogecoin experience), pass the following argument to qmake:
+To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable cagecoin experience), pass the following argument to qmake:
 
 ::
 
@@ -139,7 +139,7 @@ Ubuntu 11.10 warning
 ====================
 
 Ubuntu 11.10 has a package called 'qt-at-spi' installed by default.  At the time of writing, having that package
-installed causes dogecoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+installed causes cagecoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
 isn't yet fixed.
 
 Until the bug is fixed, you can remove the qt-at-spi package to work around the problem, though this will presumably
