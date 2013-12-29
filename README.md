@@ -1,1 +1,2 @@
-Scrypt Coin
+CageCoin - Scrypt
+http://www.cagecoin.com
