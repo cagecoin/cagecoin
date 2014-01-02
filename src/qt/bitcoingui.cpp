@@ -209,7 +209,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     miningAction = new QAction(QIcon(":/icons/mining"), tr("&Mining"), this);
-    miningAction->setToolTip(tr("dig config"));
+    miningAction->setToolTip(tr("Mining config"));
     miningAction->setCheckable(true);
     tabGroup->addAction(miningAction);
 
@@ -242,7 +242,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(signMessageAction);
 
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setToolTip(tr("Verify a message to ensure it was signed with a specified Bitcoin address"));
+    verifyMessageAction->setToolTip(tr("Verify a message to ensure it was signed with a specified Cagecoin address"));
     tabGroup->addAction(verifyMessageAction);
 
 #ifdef FIRST_CLASS_MESSAGING
@@ -631,12 +631,12 @@ void BitcoinGUI::setMining(bool mining, int hashrate)
     if (mining)
     {
         labelMiningIcon->setPixmap(QIcon(":/icons/mining_active").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelMiningIcon->setToolTip(tr("Dig CageCoins at %1 hashes per second").arg(hashrate));
+        labelMiningIcon->setToolTip(tr("Mine CageCoins at %1 hashes per second").arg(hashrate));
     }
     else
     {
         labelMiningIcon->setPixmap(QIcon(":/icons/mining_inactive").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelMiningIcon->setToolTip(tr("Not dig CageCoins"));
+        labelMiningIcon->setToolTip(tr("Not mining CageCoins"));
     }
 }
 
