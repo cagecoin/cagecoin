@@ -87,6 +87,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 	//set font of application
 	QApplication::setFont(newFont);
     
+    setObjectName("cageWalletApp");
+    setStyleSheet("#cageWalletApp { background-image:url(:/icons/vichy);background-position: bottom right;background-repeat:repeat-xy; }");
+
 	// Accept D&D of URIs
     setAcceptDrops(true);
 
@@ -202,7 +205,7 @@ void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Nicolas"), this);
+    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Cats and Doges"), this);
     overviewAction->setToolTip(tr("Show general overview of wallet"));
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
